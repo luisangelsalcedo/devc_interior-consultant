@@ -154,7 +154,11 @@
                         padding-right: 0;
                     }
                 }
-                
+
+                @media (min-width:900px) {
+                    padding-left: pxToRem(43);
+                    padding-right: pxToRem(43);
+                }                
             }
         }
     }
@@ -196,11 +200,30 @@
                     margin-left: pxToRem(12);
                 }
             }
+
+            @media (min-width:900px) {
+                h1{
+                    font-size: pxToRem(48);
+                    margin-bottom: pxToRem(40);
+                }
+                p{
+                    width: 410px;
+                    font-size: pxToRem(24);
+                    margin-bottom: pxToRem(48);
+                }
+                a{
+                    font-size: pxToRem(18);
+                }
+            }
         }
 
         &-picture{
             max-width: 351px;
             position: relative;
+
+            @media (min-width:900px) {                
+                max-width: 737px;
+            }
 
             & > img{
                 width: 100%
@@ -245,10 +268,27 @@
                 font-weight: bold;
             }
 
-            
+            @media (min-width:900px){
+                width: 410px;
+                top: calc(100% - 75px);
+                padding: pxToRem(18) pxToRem(31) pxToRem(34) pxToRem(31);
+
+                img{
+                    width: 50px;
+                }
+                &-name{
+                    font-size: pxToRem(14);
+                    small{
+                        font-size: pxToRem(12);
+                    }
+                }
+                h2{
+                    width: 287px;
+                    font-size: pxToRem(24); 
+                }
+            }
         }
     }
 }
 
 @import "./footer.scss";
-

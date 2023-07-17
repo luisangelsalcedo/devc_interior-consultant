@@ -135,6 +135,10 @@ a {
       @media (min-width: 710px) {
         .page-menu-list li:last-child {
           padding-right: 0; } }
+      @media (min-width: 900px) {
+        .page-menu-list li {
+          padding-left: 2.6875rem;
+          padding-right: 2.6875rem; } }
   .page-content {
     margin-bottom: 6.25rem; }
     @media (min-width: 710px) {
@@ -160,9 +164,22 @@ a {
       margin-bottom: 1.5625rem; }
       .page-content-description a svg {
         margin-left: 0.75rem; }
+    @media (min-width: 900px) {
+      .page-content-description h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem; }
+      .page-content-description p {
+        width: 410px;
+        font-size: 1.5rem;
+        margin-bottom: 3rem; }
+      .page-content-description a {
+        font-size: 1.125rem; } }
     .page-content-picture {
       max-width: 351px;
       position: relative; }
+      @media (min-width: 900px) {
+        .page-content-picture {
+          max-width: 737px; } }
       .page-content-picture > img {
         width: 100%; }
     .page-content-designer {
@@ -194,6 +211,20 @@ a {
         width: 210px;
         font-size: 1.125rem;
         font-weight: bold; }
+      @media (min-width: 900px) {
+        .page-content-designer {
+          width: 410px;
+          top: calc(100% - 75px);
+          padding: 1.125rem 1.9375rem 2.125rem 1.9375rem; }
+          .page-content-designer img {
+            width: 50px; }
+          .page-content-designer-name {
+            font-size: 0.875rem; }
+            .page-content-designer-name small {
+              font-size: 0.75rem; }
+          .page-content-designer h2 {
+            width: 287px;
+            font-size: 1.5rem; } }
 
 footer {
   color: #A9A9A9;
