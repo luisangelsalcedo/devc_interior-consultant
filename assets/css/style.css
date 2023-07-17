@@ -32,6 +32,9 @@ a {
   padding: 0 0.75rem;
   position: relative;
   margin: auto; }
+  @media (min-width: 710px) {
+    .container {
+      padding: 0 2rem; } }
 
 .page {
   min-height: 100vh;
@@ -42,6 +45,10 @@ a {
   .page.visible {
     overflow-y: hidden;
     height: 100vh; }
+    @media (min-width: 710px) {
+      .page.visible {
+        overflow-y: auto;
+        height: auto; } }
     .page.visible .page-menu-button-close {
       position: relative;
       transform: rotate(0);
@@ -81,6 +88,9 @@ a {
     width: 38px;
     position: relative;
     z-index: 99; }
+    @media (min-width: 600px) {
+      .page-menu-button {
+        display: none; } }
     .page-menu-button-close {
       position: absolute;
       inset: 0;
@@ -100,6 +110,14 @@ a {
     overflow: hidden;
     transition: all .3s ease;
     opacity: 0; }
+    @media (min-width: 600px) {
+      .page-menu-list {
+        position: relative;
+        height: auto;
+        overflow: auto;
+        opacity: 1;
+        display: flex;
+        flex-direction: row !important; } }
     .page-menu-list a {
       display: block;
       font-size: 1.125rem;
@@ -114,8 +132,19 @@ a {
     .page-menu-list li {
       padding-left: 1rem;
       padding-right: 1rem; }
+      @media (min-width: 710px) {
+        .page-menu-list li:last-child {
+          padding-right: 0; } }
   .page-content {
     margin-bottom: 6.25rem; }
+    @media (min-width: 710px) {
+      .page-content {
+        width: 100%; }
+        .page-content .container {
+          display: flex;
+          align-items: center; }
+          .page-content .container .page-content-description {
+            flex: 1; } }
     .page-content-description h1 {
       font-size: 2.25rem;
       margin-bottom: 1.5625rem; }
