@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://luisangelsalcedo.github.io/interior-consultant" target="_blank">
+    <a href="https://luisangelsalcedo.github.io/devc_interior-consultant" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/luisangelsalcedo/interior-consultant">
+    <a href="https://github.com/luisangelsalcedo/devc_interior-consultant">
       Solution
     </a>
     <span> | </span>
